@@ -1,0 +1,623 @@
+{
+  "lots": [
+    {
+      "lot_id": "ROOT-A",
+      "kg": 100,
+      "parents": []
+    },
+    {
+      "lot_id": "ROOT-B",
+      "kg": 80,
+      "parents": []
+    },
+    {
+      "lot_id": "A1",
+      "kg": 60,
+      "parents": [
+        {
+          "lot_id": "ROOT-A",
+          "kg": 60
+        }
+      ]
+    },
+    {
+      "lot_id": "A2",
+      "kg": 40,
+      "parents": [
+        {
+          "lot_id": "ROOT-A",
+          "kg": 40
+        }
+      ]
+    },
+    {
+      "lot_id": "MIX",
+      "kg": 80,
+      "parents": [
+        {
+          "lot_id": "A1",
+          "kg": 60
+        },
+        {
+          "lot_id": "ROOT-B",
+          "kg": 20
+        }
+      ]
+    },
+    {
+      "lot_id": "R3",
+      "kg": 33,
+      "parents": []
+    },
+    {
+      "lot_id": "R4",
+      "kg": 34,
+      "parents": []
+    },
+    {
+      "lot_id": "R5",
+      "kg": 35,
+      "parents": []
+    },
+    {
+      "lot_id": "R6",
+      "kg": 36,
+      "parents": []
+    },
+    {
+      "lot_id": "R7",
+      "kg": 37,
+      "parents": []
+    },
+    {
+      "lot_id": "R8",
+      "kg": 38,
+      "parents": []
+    },
+    {
+      "lot_id": "R9",
+      "kg": 39,
+      "parents": []
+    },
+    {
+      "lot_id": "R10",
+      "kg": 40,
+      "parents": []
+    },
+    {
+      "lot_id": "R11",
+      "kg": 41,
+      "parents": []
+    },
+    {
+      "lot_id": "R12",
+      "kg": 42,
+      "parents": []
+    },
+    {
+      "lot_id": "R13",
+      "kg": 43,
+      "parents": []
+    },
+    {
+      "lot_id": "R14",
+      "kg": 44,
+      "parents": []
+    },
+    {
+      "lot_id": "R15",
+      "kg": 45,
+      "parents": []
+    },
+    {
+      "lot_id": "R16",
+      "kg": 46,
+      "parents": []
+    },
+    {
+      "lot_id": "R17",
+      "kg": 47,
+      "parents": []
+    },
+    {
+      "lot_id": "R18",
+      "kg": 48,
+      "parents": []
+    },
+    {
+      "lot_id": "R19",
+      "kg": 49,
+      "parents": []
+    },
+    {
+      "lot_id": "R20",
+      "kg": 50,
+      "parents": []
+    },
+    {
+      "lot_id": "R21",
+      "kg": 51,
+      "parents": []
+    },
+    {
+      "lot_id": "R22",
+      "kg": 52,
+      "parents": []
+    },
+    {
+      "lot_id": "R23",
+      "kg": 53,
+      "parents": []
+    },
+    {
+      "lot_id": "R24",
+      "kg": 54,
+      "parents": []
+    },
+    {
+      "lot_id": "R25",
+      "kg": 55,
+      "parents": []
+    },
+    {
+      "lot_id": "R26",
+      "kg": 56,
+      "parents": []
+    }
+  ],
+  "shipments": [
+    {
+      "shipment_id": "S1",
+      "lot_id": "MIX",
+      "kg": 80,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S2",
+      "lot_id": "A2",
+      "kg": 40,
+      "route": "short",
+      "arrived_on": "2026-11-04",
+      "recorded_at": "2026-11-04"
+    },
+    {
+      "shipment_id": "S3",
+      "lot_id": "R3",
+      "kg": 33,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S4",
+      "lot_id": "R4",
+      "kg": 34,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S5",
+      "lot_id": "R5",
+      "kg": 35,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S6",
+      "lot_id": "R6",
+      "kg": 36,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S7",
+      "lot_id": "R7",
+      "kg": 37,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S8",
+      "lot_id": "R8",
+      "kg": 38,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S9",
+      "lot_id": "R9",
+      "kg": 39,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S10",
+      "lot_id": "R10",
+      "kg": 40,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S11",
+      "lot_id": "R11",
+      "kg": 41,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S12",
+      "lot_id": "R12",
+      "kg": 42,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S13",
+      "lot_id": "R13",
+      "kg": 43,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S14",
+      "lot_id": "R14",
+      "kg": 44,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S15",
+      "lot_id": "R15",
+      "kg": 45,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S16",
+      "lot_id": "R16",
+      "kg": 46,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S17",
+      "lot_id": "R17",
+      "kg": 47,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S18",
+      "lot_id": "R18",
+      "kg": 48,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S19",
+      "lot_id": "R19",
+      "kg": 49,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S20",
+      "lot_id": "R20",
+      "kg": 50,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S21",
+      "lot_id": "R21",
+      "kg": 51,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S22",
+      "lot_id": "R22",
+      "kg": 52,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S23",
+      "lot_id": "R23",
+      "kg": 53,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S24",
+      "lot_id": "R24",
+      "kg": 54,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S25",
+      "lot_id": "R25",
+      "kg": 55,
+      "route": "short",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    },
+    {
+      "shipment_id": "S26",
+      "lot_id": "R26",
+      "kg": 56,
+      "route": "long",
+      "arrived_on": "2026-11-03",
+      "recorded_at": "2026-11-03"
+    }
+  ],
+  "checks": [
+    {
+      "check_id": "I1",
+      "shipment_id": "S1",
+      "observed_on": "2026-11-05",
+      "recorded_at": "2026-11-05",
+      "kind": "inspection",
+      "state": "pass",
+      "kg": 2
+    },
+    {
+      "check_id": "I2",
+      "shipment_id": "S1",
+      "observed_on": "2026-11-08",
+      "recorded_at": "2026-11-09",
+      "kind": "partial_return",
+      "state": "fail",
+      "kg": 8
+    },
+    {
+      "check_id": "I3",
+      "shipment_id": "S2",
+      "observed_on": "2026-11-07",
+      "recorded_at": "2026-11-07",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 40
+    },
+    {
+      "check_id": "C3",
+      "shipment_id": "S3",
+      "observed_on": "2026-11-08",
+      "recorded_at": "2026-11-08",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C4",
+      "shipment_id": "S4",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "followup",
+      "state": "fail",
+      "kg": 3
+    },
+    {
+      "check_id": "C5",
+      "shipment_id": "S5",
+      "observed_on": "2026-11-05",
+      "recorded_at": "2026-11-05",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C6",
+      "shipment_id": "S6",
+      "observed_on": "2026-11-06",
+      "recorded_at": "2026-11-06",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C7",
+      "shipment_id": "S7",
+      "observed_on": "2026-11-07",
+      "recorded_at": "2026-11-07",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C8",
+      "shipment_id": "S8",
+      "observed_on": "2026-11-08",
+      "recorded_at": "2026-11-08",
+      "kind": "followup",
+      "state": "fail",
+      "kg": 3
+    },
+    {
+      "check_id": "C9",
+      "shipment_id": "S9",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C10",
+      "shipment_id": "S10",
+      "observed_on": "2026-11-05",
+      "recorded_at": "2026-11-05",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C11",
+      "shipment_id": "S11",
+      "observed_on": "2026-11-06",
+      "recorded_at": "2026-11-06",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C12",
+      "shipment_id": "S12",
+      "observed_on": "2026-11-07",
+      "recorded_at": "2026-11-07",
+      "kind": "followup",
+      "state": "fail",
+      "kg": 3
+    },
+    {
+      "check_id": "C13",
+      "shipment_id": "S13",
+      "observed_on": "2026-11-08",
+      "recorded_at": "2026-11-08",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C14",
+      "shipment_id": "S14",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C15",
+      "shipment_id": "S15",
+      "observed_on": "2026-11-05",
+      "recorded_at": "2026-11-05",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C16",
+      "shipment_id": "S16",
+      "observed_on": "2026-11-06",
+      "recorded_at": "2026-11-06",
+      "kind": "followup",
+      "state": "fail",
+      "kg": 3
+    },
+    {
+      "check_id": "C17",
+      "shipment_id": "S17",
+      "observed_on": "2026-11-07",
+      "recorded_at": "2026-11-07",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C18",
+      "shipment_id": "S18",
+      "observed_on": "2026-11-08",
+      "recorded_at": "2026-11-08",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C19",
+      "shipment_id": "S19",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C20",
+      "shipment_id": "S20",
+      "observed_on": "2026-11-05",
+      "recorded_at": "2026-11-05",
+      "kind": "followup",
+      "state": "fail",
+      "kg": 3
+    },
+    {
+      "check_id": "C21",
+      "shipment_id": "S21",
+      "observed_on": "2026-11-06",
+      "recorded_at": "2026-11-06",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C22",
+      "shipment_id": "S22",
+      "observed_on": "2026-11-07",
+      "recorded_at": "2026-11-07",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C23",
+      "shipment_id": "S23",
+      "observed_on": "2026-11-08",
+      "recorded_at": "2026-11-08",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C24",
+      "shipment_id": "S24",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "followup",
+      "state": "fail",
+      "kg": 3
+    },
+    {
+      "check_id": "C25",
+      "shipment_id": "S25",
+      "observed_on": "2026-11-05",
+      "recorded_at": "2026-11-05",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    },
+    {
+      "check_id": "C26",
+      "shipment_id": "S26",
+      "observed_on": "2026-11-06",
+      "recorded_at": "2026-11-06",
+      "kind": "followup",
+      "state": "pass",
+      "kg": 3
+    }
+  ]
+}
