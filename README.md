@@ -9,6 +9,8 @@
 - `lineage.py`：拆并关系和来源质量份额。
 - `journeys.py`：到货起点与路线暴露。
 - `inspections.py`：抽检/退货/回访形成的可观察区间。
+- `shelflife.py`：区间删失证据、Turnbull 生存估计、聚类折减与按政策门槛的货架期建议。
+- `advisories.py`：客户建议的不可变版本留存、依赖定位与重新评估。
 
 ## 运行
 
@@ -18,9 +20,12 @@
 python3 -m unittest discover -s tests -v
 python3 -m compileall -q .
 python3 app.py demo
+python3 app.py shelflife --as-of 2026-11-10
+python3 app.py issue --store out/advisories
+python3 app.py affected --store out/advisories
 ```
 
-`inspect` 与 `demo` 使用相同业务入口；`--as-of` 选择已知日期，`--data` 可选本地数据文件，`--output` 可将本次业务核对结果写入文件。默认数据位于 `fixtures/data.json`，默认日期为 `2026-11-10`。这些命令仅展示当前已经存在的能力。
+`inspect` 与 `demo` 使用相同业务入口；`shelflife` 输出只读货架期分析；`issue` 把建议发布到存档（证据或结论变化才追加新版本，历史不可改写），`affected` 定位受新增回访或血缘改正影响的在用建议。`--as-of` 选择已知日期，`--data` 可选本地数据文件，`--policy` 可选 JSON 政策文件覆盖默认风险门槛与最低证据要求，`--output` 可将本次结果写入文件。默认数据位于 `fixtures/data.json`，默认日期为 `2026-11-10`。这些命令仅展示当前已经存在的能力。
 
 ## 容器
 
@@ -36,6 +41,6 @@ docker run --rm --network none freshness-cohorts:local
 
 样例记录全部为本地合成数据，不代表真实农户、市场成交或实际试验结果。日期采用 `YYYY-MM-DD`，有记录时点的条目以 `recorded_at` 表示系统已知日期；同一业务键存在多个修订时选已知范围内最新记录，同日由 `revision` 区分，`withdrawn` 表示撤回。可修改样例验证业务边界，不能将演示数据的统计方向视为真实结论。
 
-lots.parents记录投入质量，子批重量等于父来源投入之和；来源比例递归守恒。shipment以到货日期起算。checks描述被观察或退回的质量及状态，不声称是全箱失效时间。基线可追溯来源与最近随访状态，不提供货架期估计或客户承诺。
+lots.parents记录投入质量，子批重量等于父来源投入之和；来源比例递归守恒。shipment以到货日期起算。checks描述被观察或退回的质量及状态，不声称是全箱失效时间。基线可追溯来源与最近随访状态；货架期口径（删失、聚类、政策门槛与版本留存）见 `docs/contracts.md`，证据不足时不给出客户承诺。
 
 接口细节见 `docs/contracts.md`。测试使用各自的内存副本和临时目录，不修改原始数据或依赖固定端口。

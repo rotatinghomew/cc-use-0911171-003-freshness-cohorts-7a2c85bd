@@ -618,6 +618,51 @@
       "kind": "followup",
       "state": "pass",
       "kg": 3
+    },
+    {
+      "check_id": "I5",
+      "shipment_id": "S5",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "full_return",
+      "state": "fail",
+      "kg": 35
+    },
+    {
+      "check_id": "I6",
+      "shipment_id": "S7",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "partial_return",
+      "state": "fail",
+      "kg": 7
+    },
+    {
+      "check_id": "I7",
+      "shipment_id": "S6",
+      "observed_on": "2026-11-08",
+      "recorded_at": "2026-11-08",
+      "kind": "full_return",
+      "state": "fail",
+      "kg": 36
+    },
+    {
+      "check_id": "I8",
+      "shipment_id": "S9",
+      "observed_on": "2026-11-09",
+      "recorded_at": "2026-11-09",
+      "kind": "followup",
+      "state": "unknown",
+      "kg": 3
+    },
+    {
+      "check_id": "I9",
+      "shipment_id": "S8",
+      "observed_on": "2026-11-07",
+      "recorded_at": "2026-11-07",
+      "kind": "inspection",
+      "state": "fail",
+      "kg": 4
     }
   ]
 }

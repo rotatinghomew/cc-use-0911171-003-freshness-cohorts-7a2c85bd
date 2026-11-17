@@ -1,0 +1,9 @@
+{
+  "policy_id": "demo-relaxed-2026-11",
+  "acceptable_spoilage_risk": 0.3,
+  "confidence_level": 0.95,
+  "min_distinct_root_lots": 3,
+  "min_effective_cases": 6.0,
+  "reference_case_kg": 40.0,
+  "min_observed_age_days": 5
+}
